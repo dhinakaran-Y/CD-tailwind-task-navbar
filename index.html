@@ -3,13 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/style.css" rel="stylesheet">
+  <title>Tailwindcss-task-navbar</title>
+  <link href="./src/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <h1 class="text-3xl font-bold text-red-600 underline">
-    Hello world!
-  </h1>
+<body
+  class="bg-[url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-no-repeat bg-cover">
+  <header class="bg-cyan-50/20 fixed w-full top-0 backdrop-blur-md">
+    <nav class="mx-15 flex justify-between items-center py-2">
+      <div class="nav--left flex space-x-5">
+        <a class="logo text-2xl text-cyan-500 font-bold">Dhina's Nav</a>
+        <div class="nav--list flex space-x-3 items-center">
+          <a href="" class="nav-items">Home</a>
+          <a href="" class="nav-items">About</a>
+          <a href="" class="nav-items">Product</a>
+          <a href="" class="nav-items">Features</a>
+        </div>
+      </div>
+      <div class="nav--right flex items-center space-x-5">
+        <input type="search"
+          class="bg-white px-7 py-1 rounded-full focus:outline-1 focus:outline-cyan-300 focus:placeholder:text-cyan-500"
+          name="" placeholder="Search">
+        <div class="bg-cyan-500 p-1 px-2.5 rounded-full font-bold outline-1 outline-cyan-300 hover:outline-white"
+          title="Dhinakaran">D</div>
+      </div>
+    </nav>
+  </header>
+
 </body>
 
 </html>

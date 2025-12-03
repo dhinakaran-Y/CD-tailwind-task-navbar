@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.nav-items{
+    @apply font-semibold p-1 px-2 rounded hover:bg-cyan-500/10 hover:text-white hover:backdrop-blur-md
+}
