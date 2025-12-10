@@ -13,17 +13,17 @@
 }
 
 .aside-head {
-   @apply text-gray-500
+   @apply text-gray-500 max-sm:text-xs
 }
 
 .aside-content{
-   @apply text-lg font-semibold
+   @apply text-lg font-semibold max-sm:text-sm
 }
 
 .feature-card {
-    @apply bg-white/80 p-5 w-50 justify-items-center text-center items-center space-y-2
+    @apply bg-white/80 justify-items-center text-center items-center space-y-2 w-30 h-30 max-sm:p-2 max-sm:*:text-xs 2xl:space-y-2 2xl:p-5 2xl:w-50 2xl:h-40
 }
 
 .small-img-card {
-   @apply col-auto w-[267px] h-[179px] *:object-center *:w-full *:h-full
+   @apply col-1 w-full h-[210px] *:object-center *:w-full *:h-full 2xl:col-auto
 }
