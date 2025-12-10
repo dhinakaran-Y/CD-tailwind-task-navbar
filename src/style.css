@@ -1,5 +1,29 @@
 @import "tailwindcss";
 
+@theme{
+    --color-primary: oklch(70.7% 0.165 254.624);
+}
+
 .nav-items{
-    @apply font-semibold p-1 px-2 rounded hover:bg-cyan-500/10 hover:text-white hover:backdrop-blur-md
+    @apply font-semibold p-1 px-2 rounded hover:bg-cyan-500/20 text-primary hover:text-black/50 hover:backdrop-blur-md
+}
+
+.btn-1 {
+    @apply bg-primary text-white px-3 py-1 font-semibold border-2 border-white outline-2 outline-primary
+}
+
+.aside-head {
+   @apply text-gray-500
+}
+
+.aside-content{
+   @apply text-lg font-semibold
+}
+
+.feature-card {
+    @apply bg-white/80 p-5 w-50 justify-items-center text-center items-center space-y-2
+}
+
+.small-img-card {
+   @apply col-auto w-[267px] h-[179px] *:object-center *:w-full *:h-full
 }

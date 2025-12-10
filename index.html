@@ -1,34 +1,348 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwindcss-task-navbar</title>
-  <link href="./src/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta title="Author" content="Dhinakaran-Y">
+    <title>Appaswamy-Apartments | Dhinakaran-Y</title>
+    <link href="./src/style.css" rel="stylesheet">
 </head>
 
-<body
-  class="bg-[url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-no-repeat bg-cover">
-  <header class="bg-cyan-50/20 fixed w-full top-0 backdrop-blur-md">
-    <nav class="mx-15 flex justify-between items-center py-2">
-      <div class="nav--left flex space-x-5">
-        <a class="logo text-2xl text-cyan-500 font-bold">Dhina's Nav</a>
-        <div class="nav--list flex space-x-3 items-center">
-          <a href="" class="nav-items">Home</a>
-          <a href="" class="nav-items">About</a>
-          <a href="" class="nav-items">Product</a>
-          <a href="" class="nav-items">Features</a>
-        </div>
-      </div>
-      <div class="nav--right flex items-center space-x-5">
+<body class="">
+    <header class="fixed z-30 w-full top-0 backdrop-blur-xs">
+        <nav class="mx-15 flex justify-between items-center py-2">
+            <div class="nav--left flex space-x-5">
+                <a class="logo text-2xl text-primary font-bold">Appaswamy Apartments</a>
+            </div>
+            <div class="nav--list flex space-x-3 items-center">
+                <a href="" class="nav-items">Home</a>
+                <a href="" class="nav-items">About</a>
+                <a href="" class="nav-items">Product</a>
+                <a href="" class="nav-items">Features</a>
+            </div>
+            <!-- <div class="nav--right flex items-center space-x-5">
         <input type="search"
           class="bg-white px-7 py-1 rounded-full focus:outline-1 focus:outline-cyan-300 focus:placeholder:text-cyan-500"
           name="" placeholder="Search">
         <div class="bg-cyan-500 p-1 px-2.5 rounded-full font-bold outline-1 outline-cyan-300 hover:outline-white"
           title="Dhinakaran">D</div>
-      </div>
-    </nav>
-  </header>
+      </div> -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- home -->
+        <section id="home"
+            class="bg-[url('https://appaswamy.com/assets/admin/uploads/media-files/202507101734-1-2.webp')] bg-no-repeat bg-center bg-cover h-[80vh] w-full before:content-[''] before:absolute before:h-[80vh] before:inset-0 before:bg-black/30">
+            <div class="pt-16 text-center relative z-10">
+                <h1 class="font-extrabold text-5xl text-blue-50">Welcome to</h1>
+                <h1 class="font-extrabold text-6xl text-primary">Appaswamy Apartments</h1>
+            </div>
+        </section>
+
+        <section id="about" class="grid grid-cols-10 gap-10 mx-20 my-30">
+            <!-- img -->
+            <div class="justify-center items-center flex col-span-2">
+                <img src="https://appaswamy.com/assets/admin/uploads/media-files/202508082304-converted.webp" alt="logo"
+                    class="">
+            </div>
+            <!-- content -->
+            <div class="col-span-5">
+                <div class="">
+                    <h1 class="text-2xl font-semibold">Kamadhenu</h1>
+                    <p class="mt-2">Set amidst the cultural richness of Mylapore, the prime
+                        location offers unparalleled convenience with proximity to
+                        iconic landmarks such as the Sri Kapaleeshwarar Temple,
+                        the serene Marina Beach, and the bustling shopping streets
+                        of Mylapore. With easy access to major transportation links
+                        and serene residential surroundings, this is the perfect spot to
+                        enjoy both comfort and connectivity</p>
+                    <div class="space-x-1 my-3">
+                        <button type="button" class="btn-1">BROCHURE</button>
+                        <button type="button" class="btn-1">ENQUIRE NOW</button>
+                        <button type="button" class="btn-1">WALKTHROUGH</button>
+                    </div>
+                </div>
+            </div>
+            <!-- aside -->
+            <div class="col-span-3 space-y-2">
+                <!-- 1 -->
+                <div class="flex justify-between">
+                    <div class="">
+                        <h4 class="aside-head">Apartment</h4>
+                        <h5 class="aside-content">
+                            3 &amp; 4 BHK
+                        </h5>
+                    </div>
+                    <div class="">
+                        <h4 class="aside-head">Project Status</h4>
+                        <h5 class="aside-content">Ongoing</h5>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="">
+                    <h4 class="aside-head">Location</h4>
+                    <h5 class="aside-content">Luz Church Road, Mylapore, Chennai</h5>
+                </div>
+                <!-- 3 -->
+                <div class="grid grid-cols-4">
+                    <div class="col-span-2">
+                        <h4 class="aside-head">Rera No</h4>
+                        <h5 class="aside-content">TNRERA/29/BLG/0270/2025 Dated: 08.08.2025</h5>
+                    </div>
+                    <!-- 3-img -->
+                    <div class="col"></div>
+                    <div class="">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202508081650-k-qr.jpg" alt=""
+                            class="w-24">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 py-10" id="Features">
+            <div class="w-[90vw] mx-auto">
+                <div class="mb-8">
+                    <h1 class="text-4xl font-semibold text-center">Features</h1>
+                </div>
+                <div class="grid grid-cols-5 gap-y-8 justify-items-center">
+                    <!-- 1 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141229-b7f7ccf03fcb60e1c4a639edcb39d81f.webp"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Rainwater Harvesting</p>
+                    </div>
+                    <!-- 2 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141229-82ca9d704c02bca2262199d96b108398.webp"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Swimming Pool</p>
+                    </div>
+                    <!-- 3 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141230-d5ae404c4a668489889f4ed176798acf.webp"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Fire Alarm & Wet riser system</p>
+                    </div>
+                    <!-- 4 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141230-a0ff5646f407795a50d24fddc5e2e48c.webp"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Reticulated Gas</p>
+                    </div>
+                    <!-- 5 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141233-aedd8e2877f6a981467481caa1af00ba.webp"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">CCTV Surveillance</p>
+                    </div>
+                    <!-- 6 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141234-8e8e84c8129de2319cdc806d9501f367.webp"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Fitness Centre</p>
+                    </div>
+                    <!-- 7 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141234-3f50d19a5b89bbdf3f24aad09afdc58e.webp"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Clubhouse</p>
+                    </div>
+                    <!-- 8 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141234-e940424174ca4bae9683960b25f996aa.webp"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Lifts with V3F & ARD</p>
+                    </div>
+                    <!-- 9 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141234-00cc9bbe5ad7cd3f1bfaee5c3875c421.webp"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Party Hall</p>
+                    </div>
+                    <!-- 10 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141235-86faf74d148adcf251e368b1b8e2fbcb.webp"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Water meters for all apartments</p>
+                    </div>
+                    <!-- 11 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141237-7357d9258502bc21cfdcd91240e86227.png"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Access-controlled boom barrier</p>
+                    </div>
+                    <!-- 12 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141239-099e9bf9787543877e3cb7f5f2d423c5.png"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">100% power backup</p>
+                    </div>
+                    <!-- 13 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141233-d8c91d7a096038452b02a574924a479f.webp"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Garbage collection room</p>
+                    </div>
+                    <!-- 14 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141235-0433f652be862fbfd7932816665a20dc.webp"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Toilets for drivers & domestic help</p>
+                    </div>
+                    <!-- 15 -->
+                    <div class="feature-card">
+                        <img src="https://appaswamy.com/assets/admin/uploads/media-files/202502141516-333e0be57ba8655507d4bc1d77869584.png"
+                            alt="1">
+                        <p class="font-semibold text-lg text-gray-400">Indoor Games</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- overview -->
+        <section class="py-10" id="overView">
+            <div class="w-[90vw] mx-auto">
+                <div class="mb-8">
+                    <h1 class="text-4xl font-semibold text-center">Overview</h1>
+                </div>
+                <div class="grid grid-cols-5 gap-3">
+                    <!-- r1 -->
+                    <!-- 1 -->
+                    <div class="small-img-card">
+                        <img src="./public/rooms-img/1.jpg" alt="">
+                    </div>
+                    <!-- 2 -->
+                    <div class="small-img-card">
+                        <img src="./public/rooms-img/2.jpg" alt="">
+                    </div>
+                    <!-- 3 -->
+                    <div class="small-img-card">
+                        <img src="./public/rooms-img/3.jpg" alt="">
+                    </div>
+                    <!-- 4 -->
+                    <div class="small-img-card">
+                        <img src="./public/rooms-img/4.jpg" alt="">
+                    </div>
+                    <!-- 5 -->
+                    <div class="small-img-card">
+                        <img src="./public/rooms-img/5.jpg" alt="">
+                    </div>
+                    <!-- r2 -->
+                    <!-- left -->
+                    <div class="col grid gap-y-3">
+                        <!-- 1 -->
+                        <div class="col">
+                            <img src="./public/rooms-img/6.jpg" alt=""
+                                class="w-full h-full">
+                        </div>
+                        <!-- 2 -->
+                        <div class="col">
+                            <img src="./public/rooms-img/7.jpg" alt=""
+                                class="w-full h-full">
+                        </div>
+                        <!-- 3 -->
+                        <div class="col">
+                            <img src="./public/rooms-img/8.jpg" alt=""
+                                class="w-full h-full">
+                        </div>
+                    </div>
+                    <!-- mid -->
+                    <div class="col-span-3">
+                        <img src="./public/rooms-img/center.webp" alt="" class="w-full h-full">
+                    </div>
+                    <!-- right -->
+                    <div class="col grid gap-y-3">
+                        <!-- 1 -->
+                        <div class="col">
+                            <img src="./public/rooms-img/9.jpg" alt=""
+                                class="w-full h-full">
+                        </div>
+                        <!-- 2 -->
+                        <div class="col">
+                            <img src="./public/rooms-img/10.jpg" alt=""
+                                class="w-full h-full">
+                        </div>
+                        <!-- 3 -->
+                        <div class="col">
+                            <img src="./public/rooms-img/11.jpg" alt=""
+                                class="w-full h-full">
+                        </div>
+                    </div>
+                    <!-- r3 -->
+                    <!-- 1 -->
+                    <div class="small-img-card">
+                        <img src="./public/rooms-img/12.jpg" alt="">
+                    </div>
+                    <!-- 2 -->
+                    <div class="small-img-card">
+                        <img src="./public/rooms-img/13.jpg" alt="">
+                    </div>
+                    <!-- 3 -->
+                    <div class="small-img-card">
+                        <img src="./public/rooms-img/14.jpg" alt="">
+                    </div>
+                    <!-- 4 -->
+                    <div class="small-img-card">
+                        <img src="./public/rooms-img/15.jpg" alt="">
+                    </div>
+                    <!-- 5 -->
+                    <div class="small-img-card">
+                        <img src="./public/rooms-img/16.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- price -->
+        <section id="pricing-section" class="py-10 bg-gray-100">
+            <div class="w-5xl mx-auto">
+                <div class="mb-8">
+                    <h1 class="text-4xl font-semibold text-center">Price List</h1>
+                </div>
+            <table class="border-collapse border border-gray-400 text-white w-full shadow-2xl mb-5">
+                <thead class="bg-[#1e1e1e] *:h-12">
+                    <tr>
+                        <th class="border border-gray-300">Unit Type</th>
+                        <th class="border border-gray-300">Size (Capter) Sq.ft</th>
+                        <th class="border border-gray-300">Price (in rupee)</th>
+                    </tr>
+                </thead>
+                <tbody class="*:h-16 text-black text-center *:not-odd:bg-gray-200">
+                    <tr>
+                        <td class="border border-gray-300">1 BHK</td>
+                        <td class="border border-gray-300">614 - 625 Sq.ft.</td>
+                        <td class="border border-gray-300 text-sm">soon</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-300">2 BHK</td>
+                        <td class="border border-gray-300">902 - 915 Sq.ft.</td>
+                        <td class="border border-gray-300 text-sm">soon</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-300">3 BHK Smart</td>
+                        <td class="border border-gray-300">1169 - 1204 Sq.ft.</td>
+                        <td class="border border-gray-300 text-sm">soon</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-300">3 BHK Large</td>
+                        <td class="border border-gray-300">1438 - 1490 Sq.ft</td>
+                        <td class="border border-gray-300 text-sm">soon</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black">
+        <div class="py-5 w-5xl mx-auto text-white text-center">
+            <p>Copyright 2025 © Appaswamy Real Estates All Rights Reserved. <a href="https://appaswamy.com/Privacy-Policy">Privacy
+                    Policy</a> | <a href="https://appaswamy.com/disclaimer">Disclaimer</a></p>
+        </div>
+    </footer>
 
 </body>
 
