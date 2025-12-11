@@ -21,9 +21,8 @@
 }
 
 .feature-card {
-    @apply bg-white/80 justify-items-center text-center items-center space-y-2 w-30 h-30 max-sm:p-2 max-sm:*:text-xs 2xl:space-y-2 2xl:p-5 2xl:w-50 2xl:h-40
-}
-
-.small-img-card {
-   @apply col-1 w-full h-[210px] *:object-center *:w-full *:h-full 2xl:col-auto
+    @apply bg-white/80 justify-items-center text-center items-center space-y-2 w-30 h-30
+     max-sm:p-2 max-sm:*:text-xs
+     sm:*:text-xs sm:p-2
+     2xl:space-y-2 2xl:p-5 2xl:w-50 2xl:h-40
 }
