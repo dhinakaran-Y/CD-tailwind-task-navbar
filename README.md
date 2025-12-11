@@ -1,0 +1,1 @@
+A apartment selling website built using React and TailwindCSS. It displays flat details, images, pricing, and contact information in the webpage.
